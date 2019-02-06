@@ -337,9 +337,12 @@ def packet_device(resource, tfvars=None):
         # generic
         'ipv4_address': raw_attrs['network.0.address'],
         'public_ipv4': raw_attrs['network.0.address'],
+        'public_ipv4_gateway': raw_attrs['network.0.gateway'],
         'ipv6_address': raw_attrs['network.1.address'],
         'public_ipv6': raw_attrs['network.1.address'],
+        'public_ipv6_gateway': raw_attrs['network.1.gateway'],
         'private_ipv4': raw_attrs['network.2.address'],
+        'private_ipv4_gateway': raw_attrs['network.2.gateway'],
         'provider': 'packet',
     }
 
